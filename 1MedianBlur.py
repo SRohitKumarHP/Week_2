@@ -1,0 +1,10 @@
+import cv2
+img = cv2.imread('2.jpg')
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gb = cv2.GaussianBlur(img, (3,3), 0)
+mb = cv2.medianBlur(img, 3)
+cv2.imshow('I', img)
+cv2.imshow('Gaussian Blur', gb)
+cv2.imshow('Median Blur', mb)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
