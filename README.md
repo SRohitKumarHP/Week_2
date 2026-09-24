@@ -1,5 +1,8 @@
 # Week_2-Tasks
 
+Install the Libraries first:
+  pip install opencv-python 
+  pip install numpy
 Week_2/
 │
 ├── 0_GaussianBlur.py
